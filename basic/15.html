@@ -1,0 +1,39 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>13. Write a Java program to print the odd numbers from 1 to 20</span>
+<pre>
+import java.util.ArrayList;
+
+class Func{
+
+ArrayList&lt;Integer> OddNum(){
+ArrayList&lt;Integer> list=new ArrayList<>();
+
+for (int i=1;i&lt;21;i++){
+if (i%2!=0)
+list.add(i);
+}
+return list;
+}
+}
+
+class A{
+public static void main(String st[]){
+Func obj = new Func();
+ArrayList&lt;Integer> list=obj.OddNum();
+for(int i: list)
+System.out.println(i);
+}
+}
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

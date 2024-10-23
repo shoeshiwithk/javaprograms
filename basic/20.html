@@ -1,0 +1,45 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>18. Write a Java program to swap the first and last elements of an array and create a new array</span>
+<pre>
+    class Func{
+        int[] Swap(int arr[]){
+        int size=arr.length;
+        int newarr[]=new int[size];
+        for(int i=0;i&lt;size;i++){
+        newarr[i]=arr[i];
+        }
+        int temp=newarr[0];
+        newarr[0]=newarr[size-1];
+        newarr[size-1]=temp;
+        return newarr;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        int arr[]=new int[]{1,2,3,4,4,56,7};
+        int size=arr.length;
+        int newarr[]=obj.Swap(arr);
+        System.out.println("Initial array:");
+        for(int i=0;i&lt;size;i++){
+        System.out.print(arr[i]+" ");
+        }
+        System.out.println("\nNew array after swap:");
+        for(int i=0;i&lt;size;i++){
+        System.out.print(newarr[i]+" ");
+        }
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

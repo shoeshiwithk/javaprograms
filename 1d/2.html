@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <pre>
+    <span>2. Program to find the frequeny of each element in the array</span>
+    class Func{
+        void Frequency(int arr[]){
+        int n=arr.length;
+        boolean visited[]=new boolean[n];
+        for(int i=0;i&lt;n;i++){
+        if (visited[i]==true)
+        continue;
+        
+        int count=1;
+        for(int j=i+1;j&lt;n;j++){
+        if (arr[i]==arr[j]){
+        visited[j]=true;
+        count++;
+        }
+        }
+        System.out.println(arr[i]+" frequency = "+count);
+        }
+        
+        }
+        }
+        
+        class main{
+        public static void main(String st[]){
+        int arr[]=new int[]{1,1,1,4,4,56,7};
+        Func obj=new Func();
+        obj.Frequency(arr);
+        }
+        }
+        <img src="ss/2.png" style="height: 150px;">
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

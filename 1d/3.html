@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <pre>
+    <span>3. Program to left rotate the elements of an array</span>
+    class Func{
+        int[] leftRotate(int arr[]){
+        int n=arr.length;
+        int temp=arr[0];
+        for(int i=1;i&lt;n;i++){
+        arr[i-1]=arr[i];
+        }
+        arr[n-1]=temp;
+        return arr;
+        }
+        
+        }
+        
+        class main{
+        public static void main(String st[]){
+        int arr[]=new int[]{1,2,3,4,5,6,7};
+        Func obj=new Func();
+        int n = arr.length;
+        System.out.println("Original array:");
+        for(int i=0;i&lt;n;i++){
+        System.out.print(arr[i]+" ");
+        }
+        int arr2[]=obj.leftRotate(arr);
+        System.out.println();
+        System.out.println("Array after left rotation:");
+        for(int i=0;i&lt;n;i++){
+        System.out.print(arr2[i]+" ");
+        }
+        }
+        }
+        <img src="ss/3.png" style="height: 150px;">
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

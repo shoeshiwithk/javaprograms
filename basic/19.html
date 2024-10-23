@@ -1,0 +1,56 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>17. Write a Java program to compute the sum of the first 100 prime numbers</span>
+<pre>
+import java.util.ArrayList;
+class Func{
+int SumOfPrimeNum(){
+ArrayList&lt;Integer> list= new ArrayList<>();
+list.add(2);
+int count=1;
+for(int j=3;count&lt;100;j++){
+boolean isPrime=true;
+for(int i=2; i&lt;j; i++){
+if(j%i==0){
+isPrime=false;
+break;
+}
+}
+if(isPrime){
+list.add(j);
+count++;
+}
+}
+
+
+int size=list.size();
+int sum=0;
+
+for(int i=0;i&lt;size;i++){
+sum=sum+list.get(i);
+System.out.print(list.get(i)+" ");
+}
+
+return sum;
+}
+}
+
+class A{
+public static void main(String st[]){
+Func obj=new Func();
+System.out.println("\nSum of first 100 Prime Numbers is :
+"+obj.SumOfPrimeNum());
+}
+}
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

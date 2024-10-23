@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>8. Write a Java program to convert a binary number to decimal number</span>
+<pre>
+    class Func{
+        int decimal(int a){
+        
+        int count=0, dec=0;
+        for(int temp=a;temp!=0;temp/=10,count++);
+        
+        for(int i=0;i&lt;count;i++){
+        int x = (int)Math.pow(2,i);
+        dec=((a%10)*x)+dec;
+        a/=10;
+        }
+        return dec;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        System.out.println(obj.decimal(11001001));
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

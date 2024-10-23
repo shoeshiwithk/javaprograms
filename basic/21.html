@@ -1,0 +1,40 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>19. Write a Java program to count the number of even and odd elements in a given array</span>
+<pre>
+    class Func{
+        int[] CountEO(int arr[]){
+        int Count[]=new int[2];
+        int even=0,odd=0;
+        for(int i=0;i&lt;arr.length;i++){
+        if(arr[i]%2==0)
+        even++;
+        else
+        odd++;
+        }
+        Count[0]=even; Count[1]=odd;
+        return Count;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        int arr[]=new int[]{1,21,23,2,3,4,5,6,7,8,9,10};
+        int Count[]=obj.CountEO(arr);
+        System.out.println("Even numbers in the array: "+Count[0]);
+        System.out.println("Odd numbers in the array: "+Count[1]);
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

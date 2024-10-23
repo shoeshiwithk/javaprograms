@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>1.Create the connection with MySQL Database and manage the driver.</span>
+<pre>
+import java.sql.*;
+class wow{
+public static void main (String st[]) throws java.lang.
+ClassNotFoundException, java.sql.SQLException{
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection c1 = DriverManager.getConnection("jdbc:mysql://localhost:
+3306/dbms","root","*******");
+Statement s1 = c1.createStatement();
+int x=s1.executeUpdate("Insert into employee_table values (8,'khushi'
+,'student','20')");
+System.out.println(x);
+c1.close();
+}
+}
+
+
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

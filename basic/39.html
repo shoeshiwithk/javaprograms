@@ -1,0 +1,35 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>37. Java program to calculate average marks</span>
+<pre>
+    class Func{
+        float AvgMrk(int arr[]){
+        int size=arr.length;
+        float avg=0;
+        for (int i=0;i&lt;size;i++){
+        avg=avg+arr[i];
+        }
+        avg=avg/size;
+        return avg;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        int arr[]=new int[]{65,65,65,65,65};
+        System.out.println("Average marks are "+obj.AvgMrk(arr));
+        
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

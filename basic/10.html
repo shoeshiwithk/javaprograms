@@ -1,0 +1,33 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>9. Write a Java program and compute the sum of the digits of an integer</span>
+<pre>
+    class Func{
+        int SumOfDigits(int a){
+        int b=0;
+        for (int i=0;a!=0;i++){
+        b+=(a%10);
+        a/=10;
+        }
+        return b;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        System.out.println(obj.SumOfDigits(123456789));
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

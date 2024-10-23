@@ -1,0 +1,43 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>21. Write a Java program to check if a positive number is a palindrome or not</span>
+<pre>
+    class Func{
+        Boolean Palindrome(int a){
+        int temp=a;
+        int rev=0;
+        while(a!=0){
+        int b=a%10;
+        rev=(rev*10)+b;
+        a/=10;
+        }
+        if(rev==temp)
+        return true;
+        else
+        return false;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        int num=101436565;
+        if(obj.Palindrome(num))
+        System.out.println(num+" is a palindrome");
+        else
+        System.out.println(num+" is not a palindrome");
+        }
+        }
+        
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

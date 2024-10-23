@@ -1,0 +1,33 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>43. Write a java program to calculate coompound Interest.</span>
+<pre>
+import java.lang.Math;
+class Func{
+float CompoundInterest(float Principal, float interest, float n, float 
+time){
+float sum=1+(interest/n);
+float CI=(float)Math.pow(sum,n*time);
+CI=(Principal*CI);
+return CI;
+}
+}
+
+class A{
+public static void main(String st[]){
+Func obj=new Func();
+System.out.println("Compound interest is "+obj.CompoundInterest
+(5000f,0.07f,1f,3f));
+}
+}
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

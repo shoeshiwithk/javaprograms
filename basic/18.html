@@ -1,0 +1,34 @@
+<html></html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>16. Write a Java program to convert seconds to hour, minute and seconds</span>
+<pre>
+    class Func{
+        void ConvertTime(int sec){
+        int hr, min, s;
+        hr=sec/3600;
+        int y=sec%(3600);
+        min=y/60;
+        s=y%60;
+        System.out.println("Given seconds convert into:");
+        System.out.println(hr+" hours "+min+" minutes and "+s+"
+        seconds.");
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj = new Func();
+        obj.ConvertTime(76437687);
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

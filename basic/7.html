@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>7. Write a Java program to convert a decimal number to binary numbers</span>
+<pre>
+    class Func{
+        int[] binary(int a){
+        int bits = Integer.SIZE-Integer.numberOfLeadingZeros(a);
+        int arr[]=new int[bits];
+        for (int i=bits-1;a!=0;i--){
+        arr[i]=a%2;
+        a=a/2;
+        }
+        return arr;
+        }
+        }
+        
+        class A{
+        public static void main(String st[]){
+        Func obj=new Func();
+        int num =500;
+        int arr[]=obj.binary(num);
+        int size=arr.length;
+        System.out.print("Binary number of "+num+" is: ");
+        for(int i=0;i&lt;size;i++){
+        System.out.print(arr[i]);
+        }
+        }
+        }
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
+

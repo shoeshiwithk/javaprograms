@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>2. Write a java program to create a class called vehicle with a method drive(). Create a subclass Car that overrides the drive() method to print "repairing the car". </span>
+<pre>
+    class Vehicle{
+        void drive(){
+        System.out.println("Are you sure the breaks are fine?");
+        System.out.println("Might wanna double check.");
+        }
+        }
+        
+        class Car extends Vehicle{
+        void drive(){
+        System.out.println("Repairing the car. (bro i aint a mechanic 
+        get that car serviced)");
+        }
+        }
+        
+        class main{
+        public static void main(String st[]){
+        Car obj = new Car();
+        obj.drive();
+        Vehicle obj2 = new Vehicle();
+        obj2.drive();
+        }
+        }
+        <img src="ss/1.png" style="height: 150px;">
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
