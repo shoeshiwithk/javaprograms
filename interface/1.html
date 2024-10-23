@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>1. Write a java program to create an interface Shape with the getArea() method. Create three classes Rectangle, Circle and Triangle that implement the Shape interface. Implement the getArea method for each of the three classes.</span>
+<pre>
+    interface Shape{
+        float pi=22f/7f;
+        float getarea(float a, float b);
+        }
+        
+        class rectangle implements Shape{
+        public float getarea(float a, float b){
+        float x=a*b;
+        return x;
+        }
+        }
+        
+        class circle implements Shape{
+        public float getarea(float a, float b){
+        System.out.println(pi);
+        float x= pi*a*a;
+        return x;
+        }
+        }
+        
+        class triangle implements Shape{
+        public float getarea(float a, float b){
+        float x=(a*b)/2;
+        return x;
+        }
+        }
+        
+        class main{
+        public static void main(String st[]){
+        
+        //rectangle
+        Shape obj=new rectangle();
+        System.out.println(obj.getarea(4.5f,5));
+        
+        //circle
+        Shape obj2=new circle();
+        System.out.println(obj2.getarea(3,0));
+        
+        //triangle
+        Shape obj3=new triangle();
+        System.out.println(obj3.getarea(3,5));
+        }
+        }
+        <img src="ss/1.png" style="height: 150px;">
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <body>
+        <div class="banner">
+<p>
+    <span>3. Write a program to create an interface Flyable with a method called fly_Obj(). Create three classes Airplane, Helicopter and Spacecraft that implements the Flyable interface.Implement the fly_Obj() method for each.</span>
+<pre>
+    interface Flyable{
+        void fly_Obj();
+        }
+        
+        class Spacecraft implements Flyable{
+        public void fly_Obj(){
+        System.out.println("Spacecrafts fly beyond earths atmosphere");
+        }
+        }
+        
+        class Airplane implements Flyable{
+        public void fly_Obj(){
+        System.out.println("Airplanes fly in the lower atmosphere");
+        }
+        }
+        
+        class Helicopter implements Flyable{
+        public void fly_Obj(){
+        System.out.println("Helicopters are the same as airplanes but 
+        less cool.");
+        }
+        }
+        
+        class main{
+        public static void main(String st[]){
+        Spacecraft obj1 = new Spacecraft();
+        Airplane obj2 = new  Airplane();
+        Helicopter obj3 = new Helicopter();
+        obj1.fly_Obj();
+        obj2.fly_Obj();
+        obj3.fly_Obj();
+        }
+        }
+        <img src="ss/3.png" style="height: 150px;">
+</pre>
+</p>
+            
+        </div>
+    </body>
+</html>
